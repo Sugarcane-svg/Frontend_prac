@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Library</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/library.css"/>
+	</head>
+	<body>
+		<!-- top -->
+		<div class="top">
+			<img src="img/toparea.png" alt="">
+		</div>
+		
+		<!-- main -->
+		
+		<div class="main">
+			<!-- <div class="book">
+				<div class="left">
+					<div class="title">
+						<label class="tab">Book:<br></label>
+						<label class="content" for="book">The Ugly Duckling</br></label>
+					</div>
+					
+					<div class="author">
+						<label class="tab">Author:<br></label>
+						<label for="author" class="content">Hans Christian Andersen</br></label>
+					</div>
+					
+					<div class="page">
+						<label for="" class="tab">Page:</label>
+						<label for="" class="content">32</label>
+					</div>
+					
+				</div><!-- end of left -->
+				
+				<!-- <div class="right">
+					<img src="./img/read_button.png" alt="" class="condition">
+					<img src="img/delete.png" alt="" class="delete">
+				</div>
+			</div> --><!-- end of book --> 
+			
+			<div class="card">
+				<img src="img/add_newbook.png" alt="" id="new">
+			</div>
+		</div> <!-- end of main -->
+		
+		
+		<div class="bookshelf">
+				<img src="img/bookshelf.png" alt="">
+		</div>
+		
+		
+		<div id='mask'>
+			<div id="close">x</div>
+			<div class="formTitle">Add New Book</div>
+			
+			<form action="" id = "form">
+				
+				<div class="formContent">
+					Book name:<br>
+					<input type="text" class="text">
+				</div>
+				<div class="formContent">
+					Author:<br>
+					<input type="text" class="text">
+				</div>
+				<div class="formContent">
+					Page:<br>
+					<input type="text" class="text">
+				</div>
+				<div class="formContent">
+					Status:
+					<div class="img">
+						<label class='sta'>READ</label><input type="radio" name="status" id="read" value="read" />
+						<label class='sta'>UNREAD</label><input type="radio" name="status" id="unread" value="unread" />
+						<!-- <img src="img/read_nor.png" name="status" alt="" class="read">
+						<img src="img/unread_nor.png" name="status1" alt="" class="unread"> -->
+					</div>
+				</div>
+				<button type="button" id='submit'>submit</button>
+			</form>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<img src="img/footer_nor.png" >
+		</div>
+		<script src="js/library.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
