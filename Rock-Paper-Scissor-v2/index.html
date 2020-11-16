@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>UI_rock_paper_scissor</title>
+	</head>
+	<body>
+		<div class="container">
+			<button type="button" id="1">Rock</button>
+			<button type="button" id="2">Paper</button>
+			<button type="button" id="3">Scissor</button>
+		</div>
+		<script>
+			var arr=["Rock","Paper","Scissor"];
+			let winCount=loseCount=0;
+			function computerPlay(){
+				var i;
+				i = Math.floor(Math.random()*(3-0));
+				return arr[i].toLowerCase();
+			}
+			function playRound(playerSelection, computerSelection){
+				if(computerSelection ==="rock"){
+					if(playerSelection.toLowerCase() === "paper"){
+						winCount++;
+						return win(playerSelection,computerSelection);
+					}else if(computerSelection===playerSelection.toLowerCase()){
+						return "dogfall";
+					}else{
+						loseCount++;
+						return lose(playerSelection,computerSelection);
+					}
+				}else if(computerSelection==="paper"){
+					if(playerSelection.toLowerCase() === "scissor"){
+						winCount++;
+						return win(playerSelection,computerSelection);
+					}else if(computerSelection===playerSelection.toLowerCase()){
+						return "dogfall";
+					}else{
+						loseCount++;
+						return lose(playerSelection,computerSelection);
+					}
+				}else if(computerSelection==="scissor"){
+					if(playerSelection.toLowerCase() === "rock"){
+						winCount++;
+						return win(playerSelection,computerSelection);
+					}else if(computerSelection===playerSelection.toLowerCase()){
+						return "dogfall";
+					}else{
+						loseCount++;
+						return lose(playerSelection,computerSelection);
+					}
+				}
+			}
+			
+			function help(){
+				return "You can pick one of choices from 'rock', 'paper', 'scissor' and computer will do it as well.\nYou will get result in console screen about 5 rounds";
+			}
+			function win(player, computer){
+				return "You win! "+player+" beats "+computer;
+			}
+			function lose(player, computer){
+				return "You lose! "+computer+" beats "+player;
+			}
+			
+			//code added after first version of the game
+			
+			var computerSelection = computerPlay();
+			// console.log(computerSelection);
+			const btns = document.querySelectorAll("button");
+			btns.forEach((button)=>{
+				button.addEventListener('click',function(){
+					result.textContent=playRound(button.innerHTML, computerSelection);
+				});
+			});
+			
+			
+			//create div to display result instead of console screen
+			const display = document.createElement('div');
+			const result = document.createElement("p");
+			result.classList.add("result");
+			display.style.cssText='height:150px; width:300px; border:2px solid pink; background-color:lightgoldenrodyellow; margin-top: 5%';
+			const body = document.querySelector('body');
+			body.appendChild(display);
+			display.appendChild(result);
+			
+			// function games(){
+			// 	let numberOfGames = prompt("how many games you want to play with me?");
+			// 	numberOfGames=parseInt(numberOfGames);
+			// 	var computerSelection;
+			// 	for(let i=0;i<numberOfGames;i++){
+			// 		computerSelection = computerPlay();
+			// 		console.log(computerSelection);
+			// 		const btns = document.querySelectorAll("button");
+			// 		btns.forEach((button)=>{
+			// 			button.addEventListener('click',function(){
+			// 				result.textContent=playRound(button.innerHTML, computerSelection);
+			// 			});
+			// 		});
+			// 	}
+			// }
+			
+			// games();
+			
+			
+			
+		</script>
+	</body>
+</html>

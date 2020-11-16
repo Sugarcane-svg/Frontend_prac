@@ -1,0 +1,25 @@
+*{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+h1{
+	text-align: center;
+}
+ul{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 3%;
+}
+
+.image_box{
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	margin-bottom: 1%;
+}
+.image_box img{
+	w400px;
+}

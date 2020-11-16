@@ -1,0 +1,121 @@
+*{
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: OCRAStd;
+}
+html{
+	background: url(../img/background.png);
+	background-repeat: no-repeat;
+}
+.intern{
+	font-size: 20px;
+	color:#b1f48d;
+	margin-top: 2%;
+	margin-left: 5%;
+}
+.logos, .flyers,.ppt{
+	margin-left: 15%;
+}
+.projectTitle{
+	width: 160px;
+	height: 30px;
+	background-color:#b1f48d;
+	border-radius: 20px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: -5%;
+}
+.projectTitle p{
+	color:#232527;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 4px;
+}
+
+.logos .logoDesign{
+	/* border:1px red solid; */
+	overflow: hidden;
+	width: 90%;
+}
+.logoDesign .logo_box{
+	overflow: hidden;
+	width: 500px;
+	height: 500px;
+	border-top:1px #b1f48d solid;
+	float: left;
+	margin-right: 1%;
+	border-radius: 10%;
+	margin-bottom: 3%;
+}
+.logoDesign .logo_box img{
+	width: 500px;
+}
+.logo_box .captain{
+	font-size: 20px;
+	color:#b1f48d;
+	text-align: center;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	
+}
+.flyers .flyerDesign{
+	/* border:1px red solid; */
+	overflow: hidden;
+	width: 90%;
+}
+.flyerDesign .flyer_box{
+	overflow: hidden;
+	width: 500px;
+	height:500px;
+	float: left;
+	margin-right: 2%;
+	border-bottom: 2px #b1f48d solid;
+	border-left: 2px #b1f48d solid;
+	border-bottom-left-radius: 10%;
+	
+	margin-bottom: 3%;
+	
+}
+.flyerDesign .flyer_box img{
+	width: 750px;
+}
+.ppt{
+	width: 100%;
+}
+
+.ppt a{
+	color:#b1f48d;
+	font-size: 16px;
+	margin-left: 3%;
+}
+.ppt a:hover{
+	color: pink;
+	border-bottom: 1px #b1f48d solid;
+}
+.ppt a:visited{
+	color:pink;
+}
+/* .back{
+	width: 100px;
+	height: 50px;
+	border:1px solid #b1f48d;
+	margin:0 auto 3%;
+} */
+/* body{
+	overflow: hidden;
+} */
+.back{
+	color:#232527;
+	font-size: 18px;
+	padding: 10px 20px;
+	background-color: #b1f48d;
+	position: absolute;
+	left: 50%;
+	margin-bottom: 3%;
+}
+.back:hover{
+	background-color: pink;
+	color:skyblue;
+}
